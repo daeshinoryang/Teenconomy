@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teenconomy | 청소년 경제교육 플랫폼</title>
+  <meta name="description" content="AI와 함께 배우는 청소년 경제교육 플랫폼 Teenconomy" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">Teenconomy</a>
+      <nav class="nav-links">
+        <a href="#home">홈</a>
+        <a href="#diagnosis">AI 진단</a>
+        <a href="#learning">경제학습</a>
+        <a href="#shorts">숏폼</a>
+        <a href="#products">금융상품</a>
+        <a href="#simulation">모의투자</a>
+        <a href="#report">리포트</a>
+      </nav>
+      <a href="#diagnosis" class="nav-btn">진단하기</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-text">
+        <p class="eyebrow">Teenconomy MVP</p>
+        <h1>AI와 함께 배우는<br />청소년 경제교육 플랫폼</h1>
+        <p class="hero-sub">나만의 맞춤형 경제학습부터 모의투자까지</p>
+        <div class="hero-actions">
+          <a href="#learning" class="btn primary">시작하기</a>
+          <a href="#diagnosis" class="btn secondary">AI 진단하기</a>
+        </div>
+      </div>
+
+      <div class="flow-card">
+        <h2>학습 흐름</h2>
+        <div class="flow-step"><span>1</span>AI 경제이해력 진단</div>
+        <div class="flow-step"><span>2</span>맞춤형 경제학습</div>
+        <div class="flow-step"><span>3</span>숏폼 경제학습</div>
+        <div class="flow-step"><span>4</span>모의투자</div>
+        <div class="flow-step"><span>5</span>AI 피드백</div>
+        <div class="flow-step"><span>6</span>성장 리포트</div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="section-title">
+        <p class="eyebrow">Main Features</p>
+        <h2>Teenconomy 주요 기능</h2>
+      </div>
+      <div class="grid three">
+        <article class="card"><div class="icon">🧠</div><h3>AI 경제이해력 진단</h3><p>경제 기본원리, 금융상품, 투자 이해도를 퀴즈로 분석합니다.</p></article>
+        <article class="card"><div class="icon">📚</div><h3>맞춤형 경제학습</h3><p>부족한 영역에 맞는 학습 콘텐츠를 추천합니다.</p></article>
+        <article class="card"><div class="icon">📱</div><h3>숏폼 경제학습</h3><p>30초~1분 분량의 짧은 콘텐츠로 핵심 개념을 학습합니다.</p></article>
+        <article class="card"><div class="icon">📈</div><h3>모의투자</h3><p>가상 포인트를 활용해 투자 결과를 체험합니다.</p></article>
+        <article class="card"><div class="icon">💬</div><h3>AI 피드백</h3><p>학습 결과와 투자 결과를 바탕으로 다음 활동을 추천합니다.</p></article>
+        <article class="card"><div class="icon">🏆</div><h3>성장 리포트</h3><p>정답률, 학습 시간, 배지 등 성장을 시각화합니다.</p></article>
+      </div>
+    </section>
+
+    <section id="diagnosis" class="section">
+      <div class="section-title">
+        <p class="eyebrow">AI Diagnosis</p>
+        <h2>AI 경제이해력 진단</h2>
+        <p>문항을 풀면 경제이해 수준과 부족한 영역을 분석합니다.</p>
+      </div>
+
+      <div id="quizBox" class="quiz-box"></div>
+      <button id="submitQuiz" class="btn primary">결과 확인하기</button>
+      <div id="resultBox" class="result-box hidden"></div>
+    </section>
+
+    <section id="learning" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Personalized Learning</p>
+        <h2>맞춤형 경제학습</h2>
+        <p>진단 결과를 바탕으로 필요한 경제 개념을 학습합니다.</p>
+      </div>
+
+      <div id="learningCards" class="grid three"></div>
+    </section>
+
+    <section id="shorts" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Short-form Learning</p>
+        <h2>숏폼 경제학습</h2>
+        <p>짧은 영상 카드와 1문항 퀴즈로 경제 개념을 확인합니다.</p>
+      </div>
+
+      <div id="shortsCards" class="grid four"></div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Financial Products</p>
+        <h2>금융상품 학습</h2>
+        <p>예금, 적금, ETF, 주식의 특징과 위험도를 비교합니다.</p>
+      </div>
+
+      <div id="productCards" class="grid two"></div>
+
+      <div class="compare-card">
+        <h3>금융상품 비교</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>구분</th><th>예금</th><th>적금</th><th>ETF</th><th>주식</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>위험도</td><td>낮음</td><td>낮음</td><td>중간</td><td>높음</td></tr>
+              <tr><td>수익 가능성</td><td>낮음</td><td>낮음</td><td>중간</td><td>높음</td></tr>
+              <tr><td>추천 대상</td><td>안정형</td><td>저축형</td><td>입문 투자형</td><td>고위험 투자형</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="simulation" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Simulation</p>
+        <h2>모의투자</h2>
+        <p>실제 돈 없이 가상 포인트로 투자 결과를 체험합니다.</p>
+      </div>
+
+      <div class="grid three">
+        <div class="stat-card"><p>초기 자산</p><h3>100,000P</h3></div>
+        <div class="stat-card"><p>현재 자산</p><h3 id="currentAsset">119,000P</h3></div>
+        <div class="stat-card"><p>수익률</p><h3 id="returnRate">+19.0%</h3></div>
+      </div>
+
+      <div class="chart-card">
+        <h3>자산 변화 그래프</h3>
+        <canvas id="assetChart"></canvas>
+      </div>
+
+      <div class="feedback-card">
+        <h3>AI 투자 피드백</h3>
+        <p>이번 모의투자에서는 자산이 증가했지만 중간에 손실 구간이 있었습니다. 투자 상품은 가격 변동 위험이 있으므로 분산투자와 장기적 관점이 중요합니다.</p>
+      </div>
+    </section>
+
+    <section id="report" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Growth Report</p>
+        <h2>성장 리포트</h2>
+        <p>학습 과정과 경제이해력 변화를 시각화합니다.</p>
+      </div>
+
+      <div class="grid two">
+        <div class="chart-card">
+          <h3>경제이해력 변화</h3>
+          <canvas id="growthChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>활동 현황</h3>
+          <canvas id="activityChart"></canvas>
+        </div>
+      </div>
+
+      <div class="badge-section">
+        <h3>획득 배지</h3>
+        <div class="grid three">
+          <div class="badge earned">🏅<h4>경제 입문자</h4><p>첫 진단 완료</p></div>
+          <div class="badge earned">🏅<h4>금융상품 마스터</h4><p>금융상품 학습 완료</p></div>
+          <div class="badge locked">🔒<h4>모의투자 전문가</h4><p>모의투자 5회 완료</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>Teenconomy</strong>
+    <p>청소년을 위한 체험형 경제교육 플랫폼</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
